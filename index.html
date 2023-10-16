@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <form action>
+    <div>
+    <!--Add few elements to the form-->
+    <h1>Save HTML Form data as text File using Javascript / Jquery</h1>
+    <div>
+      <input type="text" id="txtName" placeholder="Enter your name" />
+    </div>
+    
+    <div>
+      <input type="text" id="txtEmail" placeholder="Enter your email address" />
+    </div>
+    <div>
+    <h1>Image Password Selection</h1>
+        <p>Select 3 image boxes as your password:</p>
+        <input type="file" id="imageInput">
+        <div id="imageGrid" class="hidden"></div>
+        <p id="statusLabel"></p>
+        <input type="int" id="passw" placeholder="Enter your password" />
+        
+        <button id="confirmButton" class="hidden" onclick="Data3()">Confirm Password</button>
+       
+        <p id="passwordDisplay" class="hidden"></p>
+    
+    <div>
+      <input type="button" id="bt" value="Go to next page" onclick="abc()"/>
+      <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+    </div>
+  </div>
+</form>
+  <script src="code.js"></script>
+  <script src="code2.js"></script>
+  <script src="code3.js"></script>
+  
+</body>
