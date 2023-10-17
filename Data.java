@@ -21,8 +21,8 @@ public class Data {
 
         String name = request.getParameter("txtName");
         String email = request.getParameter("txtEmail");
-        Blob image = request.getimBlob("imageInput");
-        int pass =  Integer.parseInt(request.getParameter("passw"));
+        Blob image = request.getimBlob("imageinput");
+        int pass = request.getIntegerPassword("passw");
 
         try {
             // Create a connection to the database
@@ -30,7 +30,7 @@ public class Data {
             
 
             // Create a prepared statement to insert the form data into the database
-            String sql = "INSERT INTO itable2 (name, email, image, pass) VALUES (?, ?, ?, ?)";
+            String sql = "INSERT INTO itable3 (name, email, image, pass) VALUES (username, email, uimage, passw)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, email);
@@ -57,10 +57,10 @@ class request {
         // This is a placeholder; implement your logic here to retrieve form data
         return null;
     }
-    public Blob getimBlob(String image) {
+    public Blob getimBlob(String imageParamName) {
            return null;
     }
-    public int getInteger (int password) {
+    public int getIntegerPassword (int passwordParamName) {
         return 0;
         }
 }
