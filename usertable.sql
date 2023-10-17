@@ -8,7 +8,4 @@ CREATE TABLE itable3 (
 );
 
    
- INSERT INTO itable3 (username, email, uimage, passw)
-VALUES
-    ("namrat", "asd@12", "img/2122", 123);   
-
+ 
