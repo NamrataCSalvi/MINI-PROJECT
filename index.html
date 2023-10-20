@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,10 +10,10 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-  <form action>
+  <form action = "user-form" method="get">
     <div>
     <!--Add few elements to the form-->
-    <h1>Save HTML Form data as text File using Javascript / Jquery</h1>
+    
     <div>
       <input type="text" id="txtName" placeholder="Enter your name" />
     </div>
@@ -27,7 +29,7 @@
         <p id="statusLabel"></p>
         <input type="int" id="passw" placeholder="Enter your password" />
         
-        <button id="confirmButton" class="hidden" onclick="Data()">Confirm Password</button>
+        <input type="submit" name="submit">
        
         <p id="passwordDisplay" class="hidden"></p>
     
@@ -42,3 +44,4 @@
   <script src="code3.js"></script>
   
 </body>
+</html>
